@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Send" default="build" basedir=".">        
+<project name="RestClient" default="build" basedir=".">        
 
     <target name="build" >
-        <jar jarfile="dist/send.jar">
+        <jar jarfile="dist/RestClient.jar">
         	<manifest>
                 <attribute name="Main-Class" value="Main"/>
+                <attribute name="Class-Path" value="."/>
             </manifest>
         	<fileset dir="bin"/>
         </jar>
